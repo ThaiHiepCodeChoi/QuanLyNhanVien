@@ -1,86 +1,107 @@
-# Human Resource Management System (HRMS)
+<div align="center">
 
-> [cite_start]**Đồ án môn học: Kỹ nghệ phần mềm** > **Trường Đại học Đồng Tháp - Khoa Công nghệ và Kỹ thuật** [cite: 105]
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3BxdGhuYjZ5aHM3aHJsZm54eG55aG55aG55aG55aG55aG55aCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/L1R1TVThqceK6M8BMU/giphy.gif" width="100" />
 
-![Project Status](https://img.shields.io/badge/Status-In%20Development-yellow)
-![Platform](https://img.shields.io/badge/Platform-Web%20Application-blue)
+  # 🚀 HỆ THỐNG QUẢN LÝ NHÂN SỰ (HRMS)
+  **Đồ án môn học: Kỹ nghệ phần mềm | [cite_start]Trường Đại học Đồng Tháp** [cite: 105, 110]
 
-## 📖 Giới thiệu (Introduction)
+  [![Generic badge](https://img.shields.io/badge/Môn_Học-Kỹ_Nghệ_Phần_Mềm-purple.svg)](https://shields.io/)
+  [![Generic badge](https://img.shields.io/badge/Phiên_Bản-1.0.0-blue.svg)](https://shields.io/)
+  [![Generic badge](https://img.shields.io/badge/Trạng_Thái-Đang_Phát_Triển-orange.svg)](https://shields.io/)
+  [![Generic badge](https://img.shields.io/badge/Maintenance-Yes-green.svg)](https://shields.io/)
 
-[cite_start]**Hệ thống Quản lý Nhân sự** là giải pháp phần mềm nền tảng Web giúp doanh nghiệp tập trung hóa dữ liệu nhân sự trên một cơ sở dữ liệu duy nhất[cite: 138]. [cite_start]Phần mềm hỗ trợ giải quyết các bài toán quản trị nguồn nhân lực từ quản lý hồ sơ, chấm công, tính lương cho đến đánh giá hiệu suất[cite: 121].
-
-Dự án được xây dựng dựa trên tài liệu đặc tả yêu cầu phần mềm (SRS) chi tiết, đảm bảo tuân thủ các quy tắc nghiệp vụ chặt chẽ của doanh nghiệp.
-
-## 🚀 Tính năng chính (Key Features)
-
-[cite_start]Hệ thống đáp ứng 8 nhóm yêu cầu chức năng (Functional Requirements) cốt lõi [cite: 150-190]:
-
-* **🔐 Quản lý hệ thống & Phân quyền (FR1):** Đăng nhập/đăng xuất, quản lý tài khoản và phân quyền theo vai trò (RBAC).
-* **📂 Quản lý hồ sơ nhân viên (FR2):** Thêm mới, cập nhật, xóa và tìm kiếm nâng cao (theo MSNV, Tên, Phòng ban).
-* **🏢 Quản lý cơ cấu tổ chức (FR3):** Thiết lập và quản lý danh sách Phòng ban, Chức vụ.
-* **✍️ Quản lý hợp đồng (FR4):** Soạn thảo, gia hạn, chấm dứt hợp đồng và cảnh báo hết hạn.
-* **attendance Quản lý chấm công (FR5):** Nhân viên tự chấm công, hệ thống tự động tính ngày công, giờ làm việc và tăng ca (OT).
-* **💰 Quản lý Lương - Thưởng (FR6):** Thiết lập cấu trúc lương, tính toán lương tự động, khấu trừ bảo hiểm và xuất phiếu lương.
-* **🏆 Thi đua & Khen thưởng (FR7):** Ghi nhận thành tích, xét duyệt khen thưởng và lưu lịch sử đánh giá.
-* **📊 Báo cáo & Thống kê (FR8):** Xuất báo cáo nhân sự, báo cáo quỹ lương và thống kê cơ cấu nhân sự.
-
-## 👥 Phân quyền người dùng (User Roles)
-
-[cite_start]Hệ thống được thiết kế cho 5 nhóm đối tượng sử dụng chính[cite: 142]:
-
-| Vai trò | Trách nhiệm chính |
-| :--- | :--- |
-| **Admin** | Cấu hình hệ thống, quản lý tài khoản, sao lưu dữ liệu. |
-| **Nhân sự (HR)** | Quản lý hồ sơ nhân viên, hợp đồng lao động. |
-| **Kế toán** | Tính lương, thưởng, phụ cấp, bảo hiểm và xuất phiếu lương. |
-| **Quản lý** | Duyệt nghỉ phép/tăng ca, đánh giá KPI nhân viên cấp dưới. |
-| **Nhân viên** | Xem thông tin cá nhân, thực hiện chấm công, gửi yêu cầu nghỉ phép. |
-
-## 🛠 Công nghệ sử dụng (Tech Stack)
-
-*(Bạn hãy điền công nghệ thực tế bạn dùng vào đây, ví dụ:)*
-
-* **Frontend:** ReactJS / VueJS / HTML5 & CSS3
-* **Backend:** NodeJS / Java Spring Boot / C# .NET
-* **Database:** MySQL / SQL Server
-* **Tools:** Visual Studio Code, Git
-
-## ⚙️ Yêu cầu hệ thống (System Requirements)
-
-[cite_start]Để đảm bảo hiệu năng và trải nghiệm tốt nhất (theo NFR [cite: 191]):
-
-* [cite_start]**Trình duyệt:** Chrome, Edge, Firefox, Safari (Phiên bản mới nhất)[cite: 147].
-* [cite_start]**Mạng:** Kết nối Internet/Intranet ổn định để chấm công Real-time[cite: 148].
-* [cite_start]**Hiệu năng:** Thời gian phản hồi trung bình < 3 giây[cite: 193].
-
-## 📂 Tài liệu thiết kế (Design Documents)
-
-Dự án bao gồm các tài liệu phân tích thiết kế chi tiết (nằm trong thư mục `/docs`):
-1.  [cite_start]**Use Case Diagram:** Mô tả tương tác người dùng (Ví dụ: Tìm kiếm, Quản lý hồ sơ)[cite: 211].
-2.  [cite_start]**Sequence Diagram:** Mô tả luồng xử lý dữ liệu (Thêm mới, Cập nhật, Xóa, Tìm kiếm...)[cite: 216].
-3.  [cite_start]**Class Diagram:** Cấu trúc các lớp đối tượng (NhanVien, HoSoNhanSu, PhongBan...)[cite: 307].
-4.  [cite_start]**ERD (Entity Relationship Diagram):** Thiết kế cơ sở dữ liệu quan hệ[cite: 310].
-
-
-## 📦 Cài đặt & Hướng dẫn sử dụng
-
-1.  Clone dự án:
-    ```bash
-    git clone [[https://github.com/username/project-name.git](https://github.com/username/project-name.git)](https://github.com/ThaiHiepCodeChoi/QuanLyNhanVien.git)
-    ```
-2.  Cài đặt thư viện:
-    ```bash
-    npm install
-    ```
-3.  Chạy dự án:
-    ```bash
-    npm start
-    ```
-
-## 👨‍💻 Tác giả
-
-* [cite_start]**Lớp:** ĐHCNTT24A-CS [cite: 111]
-* [cite_start]**Chuyên ngành:** Khoa học Máy tính [cite: 112]
-* [cite_start]**Ngày thực hiện:** 12/12/2025 [cite: 114]
+  <p align="center">
+    <a href="#-giới-thiệu">Giới thiệu</a> •
+    <a href="#-tính-năng-nổi-bật">Tính năng</a> •
+    <a href="#-công-nghệ-sử-dụng">Công nghệ</a> •
+    <a href="#-hình-ảnh-demo">Demo</a> •
+    <a href="#-cài-đặt">Cài đặt</a>
+  </p>
+</div>
 
 ---
+
+## 📖 Giới thiệu
+
+> [cite_start]*"Tài liệu này mô tả đầy đủ các yêu cầu chức năng và phi chức năng của Phần mềm quản lý nhân sự, nhằm làm cơ sở cho việc phân tích, thiết kế, cài đặt, kiểm thử và bảo trì hệ thống."* [cite: 118]
+
+Dự án **HRMS** là giải pháp số hóa toàn diện quy trình quản trị nguồn nhân lực, tập trung vào việc xử lý hồ sơ, chấm công tự động và tính lương chính xác cho doanh nghiệp.
+
+---
+
+## 🔥 Tính năng nổi bật
+
+[cite_start]Hệ thống được xây dựng dựa trên 8 nhóm yêu cầu chức năng cốt lõi (FR) [cite: 151-190]:
+
+| Mã FR | Tên Chức năng | Mô tả chi tiết |
+| :--- | :--- | :--- |
+| **FR1** | 🔐 **Quản lý Hệ thống** | Đăng nhập/xuất, quản lý tài khoản, phân quyền (RBAC) cho Admin, HR, Manager. |
+| **FR2** | 📂 **Hồ sơ Nhân sự** | Thêm mới, cập nhật, xóa, tìm kiếm nâng cao (MSNV, Tên, Phòng ban). |
+| **FR3** | 🏢 **Cơ cấu Tổ chức** | Thiết lập phòng ban, quản lý danh sách chức vụ/vị trí công việc. |
+| **FR4** | 📝 **Hợp đồng** | Soạn thảo, gia hạn, chấm dứt hợp đồng lao động và cảnh báo hết hạn. |
+| **FR5** | ⏰ **Chấm công** | Chấm công Real-time, tự động tính giờ làm, tăng ca (OT). |
+| **FR6** | 💸 **Lương & Phúc lợi** | Cấu hình lương, tính toán lương tự động, xuất phiếu lương chi tiết. |
+| **FR7** | 🏆 **Khen thưởng** | Đánh giá KPI, ghi nhận thành tích và xét duyệt khen thưởng. |
+| **FR8** | 📊 **Báo cáo** | Xuất báo cáo nhân sự, bảng lương và thống kê theo biểu đồ. |
+
+---
+
+## 🛠 Công nghệ sử dụng
+
+*(Hãy chỉnh sửa phần này theo đúng ngôn ngữ bạn code nhé, dưới đây là ví dụ mẫu)*
+
+### Frontend
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+
+### Backend
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
+
+### Database
+![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
+
+### Tools
+![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white) ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
+
+---
+
+## 👥 Phân quyền Người dùng (User Roles)
+
+[cite_start]Hệ thống phân chia quyền hạn rõ ràng theo bảng sau[cite: 142]:
+
+<div align="center">
+
+| Vai trò | Icon | Quyền hạn chính |
+| :--- | :---: | :--- |
+| **Quản trị viên** | 🤴 | Toàn quyền hệ thống, sao lưu dữ liệu, cấp tài khoản. |
+| **Nhân sự (HR)** | 👩‍💼 | Quản lý hồ sơ, hợp đồng lao động. |
+| **Kế toán** | 💰 | Tính lương, thưởng, phụ cấp, bảo hiểm. |
+| **Quản lý** | 👨‍✈️ | Duyệt đơn nghỉ phép, đánh giá KPI nhân viên. |
+| **Nhân viên** | 🧑‍💻 | Chấm công, xem lương, xem hồ sơ cá nhân. |
+
+</div>
+
+---
+
+## 📸 Hình ảnh Demo
+
+*(Chèn ảnh chụp màn hình dự án của bạn vào các đường link bên dưới)*
+
+<details>
+<summary>👀 <b>Xem giao diện Đăng nhập & Dashboard</b></summary>
+<br>
+<img src="https://via.placeholder.com/800x400?text=Giao+Dien+Dang+Nhap" alt="Login Screen" width="100%">
+</details>
+
+<details>
+<summary>👀 <b>Xem giao diện Quản lý Hồ sơ</b></summary>
+<br>
+<img src="https://via.placeholder.com/800x400?text=Giao+Dien+Quan+Ly+Nhan+Su" alt="HR Management" width="100%">
+</details>
+
+---
+
+## ⚙️ Cài đặt & Hướng dẫn
+
+1. **Clone dự án về máy:**
+   ```bash
+   git clone [https://github.com/username/ten-du-an.git](https://github.com/username/ten-du-an.git)
