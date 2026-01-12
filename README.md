@@ -63,6 +63,24 @@ Hệ thống phân chia quyền hạn rõ ràng theo bảng sau:
 
 ---
 
+## 🛠 Công nghệ sử dụng
+
+Dự án sử dụng thuần các công nghệ Web Frontend, không cần cài đặt Backend phức tạp:
+<div align="center">
+
+| Frontend Core | Logic & Data | Tools |
+| :---: | :---: | :---: |
+| ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) | ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) | ![VS Code](https://img.shields.io/badge/VS_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white) |
+| ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) | ![LocalStorage](https://img.shields.io/badge/Local_Storage-green?style=for-the-badge&logo=mongodb&logoColor=white) | ![Git](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white) |
+
+</div>
+
+* **HTML5 & CSS3:** Thiết kế giao diện phẳng (Flat Design), sử dụng Flexbox/Grid, Font Google Inter, và hiệu ứng Animations mượt mà.
+* **JavaScript (Vanilla):** Xử lý toàn bộ logic nghiệp vụ (CRUD, Tính toán lương, Sinh mã tự động).
+* **LocalStorage:** Giả lập Cơ sở dữ liệu, giúp dữ liệu **không bị mất** khi tải lại trang (F5) .
+
+---
+
 ## 📸 Hình ảnh Sơ đồ
 
 <details>
@@ -106,8 +124,70 @@ Hệ thống phân chia quyền hạn rõ ràng theo bảng sau:
 
 ---
 
-## ⚙️ Cài đặt & Hướng dẫn
+## 📸 Hình ảnh Demo
 
-1. **Clone dự án về máy:**
+<details>
+<summary><b>👀 1. Giao diện Đăng nhập & Admin Dashboard</b></summary>
+<br>
+<div align="center">
+  <img src="https://via.placeholder.com/800x400?text=Admin+Dashboard:+Danh+Sach+Nhan+Vien" alt="Admin View" width="100%">
+  <p><i>Giao diện quản lý dành cho Admin với đầy đủ quyền hạn</i></p>
+</div>
+</details>
+
+<details>
+<summary><b>👀 2. Giao diện Nhân viên (Profile Card)</b></summary>
+<br>
+<div align="center">
+  <img src="https://via.placeholder.com/800x400?text=Employee+View:+Profile+Card" alt="Employee View" width="100%">
+  <p><i>Giao diện thẻ thông tin cá nhân khi Nhân viên đăng nhập</i></p>
+</div>
+</details>
+
+<details>
+<summary><b>👀 3. Tính lương & Lịch sử lương</b></summary>
+<br>
+<div align="center">
+  <img src="https://via.placeholder.com/800x400?text=Salary+Calculation" alt="Salary View" width="100%">
+</div>
+</details>
+
+---
+
+## ⚙️ Cài đặt & Hướng dẫn
+Dự án này là **Client-side**, bạn có thể chạy ngay lập tức mà không cần cài Node.js hay SQL Server.
+
+### Bước 1: Tải dự án
+Clone repository hoặc tải file `.zip` về máy và giải nén.
+
+### Bước 2: Khởi chạy
+Mở file `index.html` bằng trình duyệt web bất kỳ (Chrome, Edge, Firefox...).
+
+### Bước 3: Đăng nhập trải nghiệm
+Hệ thống có sẵn các tài khoản mẫu sau để bạn kiểm thử (Test):
+
+| Vai trò | Username | Password | Quyền hạn |
+| :--- | :--- | :--- | :--- |
+| **Quản trị viên** | `admin` | `123` | Full quyền (Thêm/Sửa/Xóa, Tính lương tổng) |
+| **Nhân viên** | `NV01` | `123` | Xem Profile, Tự chấm công, Xem lương lịch sử |
+
+> **Mẹo:** Hãy thử dùng Admin thêm một nhân viên mới (VD: Chức vụ Trưởng phòng), hệ thống sẽ tự sinh mã `TP01`. Sau đó hãy đăng xuất và đăng nhập lại bằng `TP01` / `NH@1234` để thấy điều kỳ diệu!
+
+ ### Website thử nghiệm:
    ```bash
-   git clone [https://github.com/ThaiHiepCodeChoi/QuanLyNhanVien.git](https://github.com/ThaiHiepCodeChoi/QuanLyNhanVien.git)
+  https://thaihiepcodechoi.github.io/QuanLyNhanVien/
+   ``` 
+---
+
+## 👨‍💻 Thông tin tác giả
+
+* **Sinh viên:** Thái Hồng Hiệp
+* **Lớp:** ĐHCNTT24A-CS
+* **Ngành:** Khoa học Máy tính
+* **Chuyên nghành:**: Công Nghệ Phần Mềm
+* **Trường:** Trường Đại học Đồng Tháp
+
+---
+<div align="center">
+  <i>Bài còn sơ sài về mặt giao diện ạ.</i>
+</div>
