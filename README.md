@@ -159,6 +159,11 @@ Dự án sử dụng thuần các công nghệ Web Frontend, không cần cài �
 </div> 
 </details>
 
+
+ ### Website thử nghiệm:
+   ```bash
+  https://thaihiepcodechoi.github.io/QuanLyNhanVien/
+   ``` 
 ---
 
 ## ⚙️ Cài đặt & Hướng dẫn
@@ -180,10 +185,6 @@ Hệ thống có sẵn các tài khoản mẫu sau để bạn kiểm thử (Tes
 
 > **Mẹo:** Hãy thử dùng Admin thêm một nhân viên mới (VD: Chức vụ Trưởng phòng), hệ thống sẽ tự sinh mã `TP01`. Sau đó hãy đăng xuất và đăng nhập lại bằng `TP01` / `NH@1234` để thấy điều kỳ diệu!
 
- ### Website thử nghiệm:
-   ```bash
-  https://thaihiepcodechoi.github.io/QuanLyNhanVien/
-   ``` 
 ---
 
 ## 👨‍💻 Thông tin tác giả
