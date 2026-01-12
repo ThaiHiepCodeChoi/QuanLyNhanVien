@@ -86,7 +86,7 @@ Dự án sử dụng thuần các công nghệ Web Frontend, không cần cài �
 <details>
 <summary>👀 <b>Xem Sơ đồ use case</b></summary>
 <br>
-<img src="/Ảnh Sơ đồ/Sơ đồ use case.drawio (29).png" alt="HR Management" width="50%">
+<img src="/Ảnh Sơ đồ/Sơ đồ use case.drawio (29).png" alt="HR Management" width="75%">
 </details>
   
 <details>
@@ -95,31 +95,31 @@ Dự án sử dụng thuần các công nghệ Web Frontend, không cần cài �
   
 **1.Thêm Nhân Viên**
 
-<img src="Ảnh Sơ đồ/Thêm nhân viên.drawio.png" alt="Login Screen" width="50%">
+<img src="Ảnh Sơ đồ/Thêm nhân viên.drawio.png" alt="Login Screen" width="75%">
   
 **2. Cập Nhật Thông Tin Nhân Viên**
 
-<img src="/Ảnh Sơ đồ/Cập nhật thông tin nhân viên.drawio.png" alt="Login Screen" width="50%">
+<img src="/Ảnh Sơ đồ/Cập nhật thông tin nhân viên.drawio.png" alt="Login Screen" width="75%">
 
 **3.Tìm Kiếm Nhân Viên**
 
-<img src="/Ảnh Sơ đồ/Tìm kiếm nhân viên.drawio.png" alt="Login Screen" width="50%">
+<img src="/Ảnh Sơ đồ/Tìm kiếm nhân viên.drawio.png" alt="Login Screen" width="75%">
 
 **4.Xóa Nhân Viên**
 
-<img src="/Ảnh Sơ đồ/xóa nhân viên.drawio.png" alt="Login Screen" width="50%">
+<img src="/Ảnh Sơ đồ/xóa nhân viên.drawio.png" alt="Login Screen" width="75%">
 </details>
 
 <details>
 <summary>👀 <b>Xem sơ đồ class</b></summary>
 <br>
-<img src="/Ảnh Sơ đồ/class.jpg" alt="HR Management" width="50%">
+<img src="/Ảnh Sơ đồ/class.jpg" alt="HR Management" width="75%">
 </details>
 
 <details>
 <summary>👀 <b>Xem sơ đồ ERD</b></summary>
 <br>
-<img src="/Ảnh Sơ đồ/ERD.jpg" alt="HR Management" width="50%">
+<img src="/Ảnh Sơ đồ/ERD.jpg" alt="HR Management" width="75%">
 </details>
 
 ---
@@ -130,7 +130,7 @@ Dự án sử dụng thuần các công nghệ Web Frontend, không cần cài �
 <summary><b>👀 1. Giao diện Đăng nhập & Admin Dashboard</b></summary>
 <br>
 <div align="center">
-  <img src="https://via.placeholder.com/800x400?text=Admin+Dashboard:+Danh+Sach+Nhan+Vien" alt="Admin View" width="100%">
+  <img src="/SPRM/Giao diện của Admin.png" alt="Admin View" width="75%">
   <p><i>Giao diện quản lý dành cho Admin với đầy đủ quyền hạn</i></p>
 </div>
 </details>
@@ -139,17 +139,24 @@ Dự án sử dụng thuần các công nghệ Web Frontend, không cần cài �
 <summary><b>👀 2. Giao diện Nhân viên (Profile Card)</b></summary>
 <br>
 <div align="center">
-  <img src="https://via.placeholder.com/800x400?text=Employee+View:+Profile+Card" alt="Employee View" width="100%">
+  <img src="SPRM/Giao diện chính của nhân viên.png" alt="Employee View" width="75%">
   <p><i>Giao diện thẻ thông tin cá nhân khi Nhân viên đăng nhập</i></p>
 </div>
 </details>
 
 <details>
-<summary><b>👀 3. Tính lương & Lịch sử lương</b></summary>
+<summary><b>👀 3. Tính lương & Lịch sử lương & Điểm danh</b></summary>
 <br>
 <div align="center">
-  <img src="https://via.placeholder.com/800x400?text=Salary+Calculation" alt="Salary View" width="100%">
-</div>
+  <img src="SPRM/Giao diện tính lương của admin.png" alt="Salary View" width="75%">
+  <p><i> Giao diện tính lương cho toàn bộ nhân viên của admin</i>i></p>
+  
+  <img src="SPRM/Giao diện tính lương của nhân viên.png" alt="Salary View" width="75%">
+  <p><i> Giao diện tính lương của nhân viên</i>i></p>
+  
+  <img src="SPRM/Điểm danh của nhân viên.png" alt="Salary View" width="75%">
+  <p><i> Giao diện điểm danh của nhân viên</i>i></p>
+</div> 
 </details>
 
 ---
