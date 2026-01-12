@@ -95,7 +95,7 @@ Hệ thống phân chia quyền hạn rõ ràng theo bảng sau:
 <details>
 <summary>👀 <b>Xem sơ đồ class</b></summary>
 <br>
-<img src="/class.jpg (29).png" alt="HR Management" width="50%">
+<img src="/class.jpg" alt="HR Management" width="50%">
 </details>
 
 <details>
