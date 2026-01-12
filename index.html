@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hệ thống Quản lý Nhân sự</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div id="login-section" class="login-container">
+        <div class="login-box">
+            <h2 style="color: #2c3e50;">HRMS SYSTEM</h2>
+            <p>Đăng nhập hệ thống</p>
+            <input type="text" id="username" placeholder="Tên đăng nhập (admin)">
+            <input type="password" id="password" placeholder="Mật khẩu">
+            <button onclick="handleLogin()">Đăng nhập</button>
+            <p id="login-error" class="error-msg"></p>
+        </div>
+    </div>
+
+    <div id="main-app" class="hidden">
+        <nav class="sidebar">
+            <div class="brand"><h3><i class="fa-solid fa-user-tie"></i> QUẢN LÝ NS</h3></div>
+            <ul>
+                <li onclick="switchSection('sec-employee', this)" class="nav-item active">
+                    <a href="#"><i class="fa-solid fa-users"></i> Hồ sơ nhân sự</a>
+                </li>
+                <li onclick="switchSection('sec-attendance', this)" class="nav-item">
+                    <a href="#"><i class="fa-solid fa-calendar-check"></i> Chấm công (FR5)</a>
+                </li>
+                <li onclick="switchSection('sec-salary', this)" class="nav-item">
+                    <a href="#"><i class="fa-solid fa-sack-dollar"></i> Lương thưởng (FR6)</a>
+                </li>
+                <li onclick="handleLogout()">
+                    <a href="#"><i class="fa-solid fa-right-from-bracket"></i> Đăng xuất</a>
+                </li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="sec-employee" class="tab-section">
+                <header><h2>Thông tin Nhân sự</h2><div class="user-info">...</div></header>
+                <div class="toolbar">
+                    <div class="search-box">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" id="search-input" placeholder="Tìm kiếm..." onkeyup="searchEmployee()">
+                    </div>
+                    <button id="btn-add-emp" class="btn-add" onclick="openModal('add')"><i class="fa-solid fa-plus"></i> Thêm mới</button>
+                </div>
+                <div class="table-container">
+                    </div>
+            </section>
+
+            <section id="sec-attendance" class="tab-section hidden">
+                <header><h2>Quản lý Chấm công</h2><div class="user-info">...</div></header>
+                <div class="toolbar" style="justify-content: flex-start; gap: 10px;">
+                    <select id="att-msnv" style="padding: 10px; border-radius: 5px; border: 1px solid #ddd; min-width: 200px;"></select>
+                    <input type="date" id="att-date" style="padding: 10px; border-radius: 5px; border: 1px solid #ddd;">
+                    <button class="btn-add" onclick="addAttendance()" style="background: #27ae60;"><i class="fa-solid fa-check"></i> Điểm danh</button>
+                </div>
+                <div class="table-container">
+                    <h3>Lịch sử chấm công</h3>
+                    <table>
+                        <thead><tr><th>Ngày</th><th>MSNV</th><th>Họ Tên</th><th>Trạng thái</th></tr></thead>
+                        <tbody id="attendance-table-body"></tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section id="sec-salary" class="tab-section hidden">
+                <header><h2>Bảng Lương & Thưởng</h2><div class="user-info">...</div></header>
+                
+                <div id="salary-toolbar" class="toolbar" style="justify-content: flex-start; gap: 10px;">
+                    <label style="padding: 10px;">Chọn tháng:</label>
+                    <input type="month" id="salary-month" style="padding: 10px; border-radius: 5px; border: 1px solid #ddd;">
+                    <button class="btn-add" onclick="calculateSalary()" style="background: #e67e22;"><i class="fa-solid fa-calculator"></i> Tính lương cả công ty</button>
+                </div>
+
+                <div class="table-container">
+                    <table>
+                        <thead id="salary-thead">
+                            <tr><th>MSNV</th><th>Họ Tên</th><th>Lương CB</th><th>Ngày công</th><th>Tổng Nhận</th></tr>
+                        </thead>
+                        <tbody id="salary-table-body"></tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <div id="modal-form" class="modal hidden">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title">Thông tin nhân viên</h2>
+            <form id="employee-form" onsubmit="saveEmployee(event)">
+                <input type="hidden" id="inp-mode">
+                <div class="form-group-row" style="display: flex; gap: 15px;">
+                    <div class="form-group" style="flex: 1;">
+                        <label>Chức vụ <span style="color:red">*</span></label>
+                        <select id="inp-position" onchange="autoGenerateMSNV()" required>
+                            <option value="" disabled selected>-- Chọn --</option>
+                            <option value="Giám đốc">Giám đốc</option>
+                            <option value="Trưởng phòng">Trưởng phòng</option>
+                            <option value="Nhân viên">Nhân viên</option>
+                        </select>
+                    </div>
+                    <div class="form-group" style="flex: 1;">
+                        <label>Mã Nhân Viên</label>
+                        <input type="text" id="inp-msnv" readonly style="background-color: #f1f5f9; font-weight: bold; color: #555;">
+                    </div>
+                </div>
+                <div class="form-group-row" style="display: flex; gap: 15px;">
+                    <div class="form-group" style="flex: 2;">
+                        <label>Họ và Tên <span style="color:red">*</span></label>
+                        <input type="text" id="inp-name" required>
+                    </div>
+                    <div class="form-group" style="flex: 1;">
+                        <label>Giới tính</label>
+                        <select id="inp-gender"><option value="Nam">Nam</option><option value="Nữ">Nữ</option></select>
+                    </div>
+                </div>
+                <div class="form-group-row" style="display: flex; gap: 15px;">
+                    <div class="form-group" style="flex: 1;">
+                        <label>Ngày sinh</label><input type="date" id="inp-dob" required>
+                    </div>
+                    <div class="form-group" style="flex: 1;">
+                        <label>Quê quán</label><input list="provinces" id="inp-hometown" placeholder="Gõ tìm..." required>
+                        <datalist id="provinces">
+                            <option value="Hà Nội"><option value="Hồ Chí Minh"><option value="Đồng Tháp"><option value="An Giang">
+                        </datalist>
+                    </div>
+                </div>
+                <div class="form-group-row" style="display: flex; gap: 15px;">
+                    <div class="form-group" style="flex: 1;">
+                        <label>Phòng ban</label>
+                        <select id="inp-dept"><option value="Nhân sự">Nhân sự</option><option value="Kế toán">Kế toán</option><option value="Công nghệ thông tin">Công nghệ thông tin</option></select>
+                    </div>
+                    <div class="form-group" style="flex: 1;">
+                        <label>Ngày vào làm</label><input type="date" id="inp-date" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Lương Cơ Bản (VNĐ)</label><input type="number" id="inp-salary" required>
+                </div>
+                <button type="submit" class="btn-save">Lưu dữ liệu</button>
+            </form>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
