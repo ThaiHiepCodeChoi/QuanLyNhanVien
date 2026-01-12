@@ -68,7 +68,7 @@ Hệ thống phân chia quyền hạn rõ ràng theo bảng sau:
 <details>
 <summary>👀 <b>Xem Sơ đồ use case</b></summary>
 <br>
-<img src="/Sơ đồ use case.drawio (29).png" alt="HR Management" width="50%">
+<img src="/Ảnh Sơ đồ/Sơ đồ use case.drawio (29).png" alt="HR Management" width="50%">
 </details>
   
 <details>
@@ -77,31 +77,31 @@ Hệ thống phân chia quyền hạn rõ ràng theo bảng sau:
   
 **1.Thêm Nhân Viên**
 
-<img src="/Thêm nhân viên.drawio.png" alt="Login Screen" width="50%">
+<img src="Ảnh Sơ đồ/Thêm nhân viên.drawio.png" alt="Login Screen" width="50%">
   
 **2. Cập Nhật Thông Tin Nhân Viên**
 
-<img src="/Cập nhật thông tin nhân viên.drawio.png" alt="Login Screen" width="50%">
+<img src="/Ảnh Sơ đồ/Cập nhật thông tin nhân viên.drawio.png" alt="Login Screen" width="50%">
 
 **3.Tìm Kiếm Nhân Viên**
 
-<img src="/Tìm kiếm nhân viên.drawio.png" alt="Login Screen" width="50%">
+<img src="/Ảnh Sơ đồ/Tìm kiếm nhân viên.drawio.png" alt="Login Screen" width="50%">
 
 **4.Xóa Nhân Viên**
 
-<img src="/xóa nhân viên.drawio.png" alt="Login Screen" width="50%">
+<img src="/Ảnh Sơ đồ/xóa nhân viên.drawio.png" alt="Login Screen" width="50%">
 </details>
 
 <details>
 <summary>👀 <b>Xem sơ đồ class</b></summary>
 <br>
-<img src="/class.jpg" alt="HR Management" width="50%">
+<img src="/Ảnh Sơ đồ/class.jpg" alt="HR Management" width="50%">
 </details>
 
 <details>
 <summary>👀 <b>Xem sơ đồ ERD</b></summary>
 <br>
-<img src="/ERD.jpg" alt="HR Management" width="50%">
+<img src="/Ảnh Sơ đồ/ERD.jpg" alt="HR Management" width="50%">
 </details>
 
 ---
