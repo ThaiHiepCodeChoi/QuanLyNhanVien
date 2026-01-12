@@ -196,5 +196,6 @@ Hệ thống có sẵn các tài khoản mẫu sau để bạn kiểm thử (Tes
 
 ---
 <div align="center">
-  <i>Bài còn sơ sài về mặt giao diện ạ.</i>
+  <i>Bài còn sơ sài về mặt giao diện ạ. Mong được góp ý để có thể phát triển thêm ạ.</i>
+  <i>Cả nhóm xin cảm ơn.</i>
 </div>
